@@ -1,0 +1,125 @@
+   p{
+	 color: black;
+	 font-size: 17px;
+	}
+   
+   .wrap-list{
+    width: 31%;
+	 border-radius: 20px;
+	 border: 10px solid black
+	} 
+
+   .wrap-questions{
+   	 height: 215px;
+   	 width: 31%;
+   	 border-radius: 20px;
+   	 border: 10px solid black
+	}
+
+   .color1{
+   	 color: #e14c1e;
+   	 font-size: 17;
+   }
+
+   #one {
+      height: 150px;
+      width: 150px;
+      background-color: blue;
+      display: inline-block;
+      position: fixed;
+      left: 25%;
+   }
+
+   #two {
+      height: 150px;
+      width: 150px;
+      background-color: pink;
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+   }
+
+   #three {
+      height: 150px;
+      width: 150px;
+      background-color: red;
+      display: inline-block;
+      position: relative;
+      bottom: -200px;
+      right: -200px;
+      z-index: 2;
+   } 
+
+   #background-h {
+      height: 2048px;
+      background-color: #FF9933;
+   }
+
+   #banner{
+      height:250px;
+      width:99%;
+      border:5px solid black;   
+   }
+
+   #picture1{
+      position: relative;
+      left: 250px;
+
+   }
+
+   #picture2{
+      position: relative;
+      left: 350px;
+
+   }
+
+   .navitem{
+      list-style-type: none;
+      display: inline;
+      margin-right: .3em;
+      padding: 2px 5px;
+   }
+
+   #navmenu{
+      text-align: center;
+      background-color: #f97406;
+      color: white;
+   }
+
+   a:link{
+      color: blue;
+   }
+
+   a:visited{
+      color: purple;
+   }
+
+   a:hover{
+      color: #cb030c;
+   }
+
+   a:active{
+      color: blue
+   }
+
+   .rightside { 
+      float:right; 
+      width:48%;
+      margin-right: px; 
+   }
+
+   .leftside { 
+      width:48%;
+      margin-left: 400px; 
+   }
+
+   .clearfloat { 
+      clear:both; 
+   }
+
+
+
+
+
+
+

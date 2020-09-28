@@ -1,0 +1,102 @@
+
+<html> 
+  <head>
+   
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    
+    <title>-MMM Burger-</title>
+
+    <script>
+      function banner(){ 
+      var text = confirm("You know this button takes you to this page right?"); 
+      return text; 
+      } 
+      function answer(){
+        var radio = document.getElementsByName("question")
+        var selection = false;
+        var message = "";
+        for( var i = 0; i < radio.length; i++) {
+          if(radio[i].value == "yes" && radio[i].checked == true) {
+            selection = true;
+          }
+        }
+        if(selection == true) {
+          message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+        } else { 
+            message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+        }
+          document.getElementById("response").innerHTML = message;
+      }
+    </script>
+  
+  </head>
+  
+  <body id="background-h"> 
+    <a onclick="return banner()" href="index.html">
+      <h1>The Best Burger</h1>
+    </a>
+    <nav>
+      <ul id="navmenu">
+        <li class="navitem"> <a href="index.html"> Home </a> </li>
+        <li class="navitem"> <a href="info.html"> Info </a> </li>
+        <li class="navitem"> <a href="cats.html"> Cats </a> </li>
+      </ul>
+    </nav>
+    
+    <p>
+      This site is dedicated to <i>burger's</i>; <i>burger's</i> hit very close to home with me,
+      because I eat <i>burger's</i> at my house, there are many different kinds of
+      <i>burger's</i> but my favorite <i>burger</i> is <b><u>raw burger</u></b>, the reason why
+      I like this <i>burger</i> so much is because this is a joke about a <i>burger</i> that
+      <b><u>my friends and I</u></b> made.
+    </p>
+
+    <div class="rightside">
+      <div class="wrap-questions">
+        <h3> Burger question </h3>
+        <p> What is the best burger? </p>
+        <form>
+          <div id="response"> </div>
+          <input type="radio" name="question" value="no"> Cooked Burger <br>
+          <input type="radio" name="question" value="yes"> Raw Burger <br>
+          <input type="radio" name="question" value="no"> Cooked Cheese Burger <br>
+          <input type="radio" name="question" value="no"> Veggie Burger <br>
+          <input onclick="answer()" type="button" Value="Check">
+        </form>
+      </div>
+    </div>
+
+    <div class="leftside">
+      <div class="wrap-list">
+        <ol>
+          <h3> <mark> Burger Facts </mark> </h3>
+          <span class="color1"><li class="listitem"> The best burger is the <b>Raw Burger</b>. <l1>
+          <li class="listitem"> Burger's should never be cooked. </li>
+          <li class="listitem"> The <b>Raw Burger</b> came before any burger. </li></span>
+        </ol>
+      </div>
+    </div>
+
+    <div class"clearfloat"></div>
+    
+    <div>
+      <hr/>
+    
+      <img width=20% src="https://images.stockfreeimages.com/330/sfixl/3300056.jpg" id="picture1"/>
+      <img width=30% src="https://images.stockfreeimages.com/1672/sfixl/16723958.jpg" id="picture2"/>
+    
+      <hr/>
+    </div>
+
+      <div id="banner">
+      
+        <center> Website Made By Derek </center> 
+      
+        <ul> 
+          <a href="https://chipotle.com">My Favorite Website!</a> 
+        </ul>
+      </div>
+        
+  </body> 
+</html>
+
