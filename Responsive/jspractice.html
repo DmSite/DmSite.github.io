@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title> JavaScript Practice </title>
+		<script>
+			var games = ["monopoly", "hide' n seek", "metroid", "baseball", 61];
+			function start() {
+				var age = 15;
+				var name = "Bob";
+				alert(name +"is"+ age);
+			} //end start function
+			function math() {
+				var calc = 133 * 5324 - 535 / 2 + 123;
+				alert(calc)
+			} //end function math
+			function question() {
+				var question = prompt("what is one of my favorite color?");
+				if (question == "blue" || question == "red" ) {
+					alert("what a good friend")
+				} else {
+					alert("that's incorrect mister")
+				}
+			}//end function question
+			function rate() {
+				var q = prompt("how much do you like JavaScript 1-10?");
+				if (q < 4) {
+					alert("dont give up, your so close I can feel it!");
+				} else if (q < 7) {
+					alert("just wait, it gets better!");
+				} else {
+					alert("your in for a real treat!")
+				}
+			}//end function rate
+			function change() {
+				var edit = document.querySelector("#find");
+				edit.innerHTML = "This Page is Full of Suprises!"
+			}//end function change
+			var pass = 1;
+			function toggle() {
+				var twitch = document.querySelector("#rotate")
+				if (pass == 1) {
+					twitch.innerHTML = "you didn't see anthing...";
+					pass = 2;
+					return;
+				} else if (pass == 2) {
+					twitch.innerHTML = "<img src='https://simplycoding.s3-us-west-2.amazonaws.com/Images/piskelFish.png' />";
+					pass = 3;
+					return; 
+				} else {
+					twitch.innerHTML = "Ta-da!";
+					pass = 1;
+					return;
+				}
+			}//end function toggle
+			function joke() {
+				var q = prompt("What color was George Washingtons white horse?");
+				while (q != "white"){
+					q = prompt("What color was George Washington's white horse?");
+				}
+				alert(" yes, you did it!");
+			}//end function joke
+			function oddCounts(){ 
+				for(var i = 1; i < 10; i+=2){ 
+					alert(i);
+				}
+			}//end function oddcounts
+			var sentence = "railroad crossing look out for the cars can you spell that without any r's?";
+			var array = [];
+			for (var i = 0; i < sentence.length; i++) {
+				if(sentence[i] == "r") {
+					array.push(sentence[i]);
+				}
+			}
+			var shirt = {color:"orange & blue", price: 19.92, size: "XL", shipping: 2.37};
+			function obj() {
+				var ask = prompt("What do you want to know about my shirt? (color, price, size or shipping):");
+				alert("This shirt's " + ask + " is " + shirt[ask]); 
+			}//end function obj
+			function morph() {
+				var box = document.querySelector("#box");
+				box.style.backgroundColor = "black";
+				box.style.border = "12px ridge yellow";
+				box.innerHTML = "Did you just see that!";
+			} //end function morph
+		</script>
+		<style>
+			#box{
+				color: orange;
+				background-color: green;
+				height: 250px;
+				width: 250px; 
+			} 
+		</style>
+	</head>
+	<body>
+		<div>
+			There are <script>document.write(array.length);</script> r's in the sentence: "<script>document.write(sentence);</script>" 
+		</div>
+		<p>A game I like is <script>document.write(games[1]);</script> </p>
+		<div id="rotate">This text may change</div>
+		<div id="find">My JavaScript Practice Page</div>
+		<input type="button" onclick="start()" value="Alert Me">
+		<input type="button" onclick="math()" value="Calculate">
+		<input type="button" onclick="question()" value="question">
+		<input type="button" onclick="rate()" value="Rate JS">
+		<input type="button" onclick="change()" value="Magic Button">
+		<input type="button" onclick="toggle()" value="change button">
+		<input type="button" onclick="joke()" value="Joke">
+		<input type="button" onclick="oddCounts()" value="For Loop"> 
+		<input type="button" onclick="obj()" value="Click for Info">
+		<input type="button" onclick="morph()" value="Change the Box">
+		<div id="box">You're about to see some change</div> 
+	</body>
+</html>
